@@ -1,0 +1,84 @@
+.navbar {
+  width: 60%;
+  margin: 1rem auto 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  .navbar-logo {
+    width: 10%;
+    max-width: 90px;
+    img {
+      height: 3rem;
+      width: 100%;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+  .navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include sm {
+      justify-content: flex-end;
+    }
+
+    .navbar-items {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: $black;
+      border-radius: 5px;
+
+      @include sm {
+        margin-bottom: 0.5rem;
+      }
+
+      &:nth-child(1) {
+        margin-left: 0;
+        @include sm {
+          margin-left: 0.5rem;
+        }
+      }
+      &:nth-last-child(1) {
+        margin-right: 0;
+        @include sm {
+          margin-right: 0.5rem;
+        }
+      }
+
+      a {
+        color: $white;
+        background-color: inherit;
+        font-size: 1.2rem;
+
+        svg {
+          color: $white;
+          background-color: inherit;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .head-item {
+      background-color: $green;
+    }
+  }
+
+  @include md {
+    width: 85%;
+  }
+
+  @include sm {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+
+  @include xs {
+    width: 100%;
+  }
+}

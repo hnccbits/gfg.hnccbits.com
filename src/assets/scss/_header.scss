@@ -1,0 +1,48 @@
+.header {
+  text-align: center;
+  padding: 10rem 0 5rem;
+
+  @include lg {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @include sm {
+    width: 75%;
+    text-align: left;
+    padding: 4rem 0 2rem;
+    margin: 2rem;
+  }
+
+  h1 {
+    font-size: $font-xl;
+    color: $black;
+
+    @include lg {
+      font-size: $font-xl-md;
+    }
+
+    @include sm {
+      font-size: $font-xl-sm;
+    }
+
+    span {
+      color: $green;
+    }
+  }
+
+  h3 {
+    color: $light-text;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: $font-sm;
+
+    @include lg {
+      font-size: $font-sm-md;
+    }
+
+    @include sm {
+      font-size: $font-sm-sm;
+    }
+  }
+}
