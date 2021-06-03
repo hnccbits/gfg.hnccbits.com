@@ -1,4 +1,4 @@
-.header {
+.section {
   text-align: center;
   padding: 10rem 0 5rem;
 
@@ -17,6 +17,7 @@
   h1 {
     font-size: $font-xl;
     color: $black;
+    text-transform: capitalize;
 
     @include lg {
       font-size: $font-xl-md;
@@ -43,6 +44,28 @@
 
     @include sm {
       font-size: $font-sm-sm;
+    }
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    background-color: $green;
+    font-size: 1.2rem;
+    color: $white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5rem;
+    transition: 400ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 2px 3px 6px $green;
+      text-shadow: 1px 1px 20px $white;
+    }
+
+    @include sm {
+      margin-top: 3rem;
     }
   }
 }
