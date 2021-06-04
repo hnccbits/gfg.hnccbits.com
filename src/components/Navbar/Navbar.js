@@ -1,12 +1,10 @@
 import React from 'react';
 import logo from '../../assets/images/gfg.png';
 import NavbarItems from './NavbarItems';
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaInstagramSquare,
-} from 'react-icons/fa';
+import { FaGithub, FaInstagram } from 'react-icons/fa';
+
+const github = 'https://github.com/GeeksForGeeks-BIT-Sindri/Gfg-BITS-Website';
+const instagram = 'https://instagram.com/gfg.hnccbits?utm_medium=copy_link';
 
 function Navbar() {
   return (
@@ -23,13 +21,15 @@ function Navbar() {
           <img src={logo} alt="GfG" />
         </div>
         <div className="navbar-items-container">
-          <NavbarItems className="head-item">Geeks:</NavbarItems>
-          <NavbarItems>Home</NavbarItems>
-          <NavbarItems>Team</NavbarItems>
-          <NavbarItems>
+          <NavbarItems link="/" className="head-item">
+            Geeks:
+          </NavbarItems>
+          <NavbarItems link="/home">Home</NavbarItems>
+          <NavbarItems link="/team">Team</NavbarItems>
+          <NavbarItems link={github}>
             <FaGithub size={18} />
           </NavbarItems>
-          <NavbarItems>
+          <NavbarItems link={instagram}>
             <FaInstagram size={18} />
           </NavbarItems>
         </div>

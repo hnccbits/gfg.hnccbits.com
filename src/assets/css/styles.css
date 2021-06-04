@@ -80,6 +80,7 @@
   color: #ffffff;
   background-color: inherit;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .navbar .navbar-items-container .navbar-items a svg {
@@ -297,8 +298,11 @@
 }
 
 .footer .container .form {
-  text-align: left;
   flex: 1;
+}
+
+.footer .container .form form {
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -307,7 +311,7 @@
 }
 
 @media (max-width: 576px) {
-  .footer .container .form {
+  .footer .container .form form {
     border-right: none;
     border-bottom: 3px solid #6b7280;
     margin-bottom: 2rem;
@@ -315,7 +319,7 @@
   }
 }
 
-.footer .container .form input {
+.footer .container .form form input {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -326,13 +330,13 @@
 }
 
 @media (max-width: 576px) {
-  .footer .container .form input {
+  .footer .container .form form input {
     width: 100%;
     font-size: 1rem;
   }
 }
 
-.footer .container .form textarea {
+.footer .container .form form textarea {
   width: 90%;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -342,13 +346,13 @@
 }
 
 @media (max-width: 576px) {
-  .footer .container .form textarea {
+  .footer .container .form form textarea {
     width: 100%;
     font-size: 1rem;
   }
 }
 
-.footer .container .form button {
+.footer .container .form form button {
   padding: 0.5rem 1rem;
   margin-top: 1.4rem;
   font-size: 1.2rem;
@@ -361,7 +365,7 @@
 }
 
 @media (max-width: 576px) {
-  .footer .container .form button {
+  .footer .container .form form button {
     width: 100%;
     font-size: 1rem;
   }
