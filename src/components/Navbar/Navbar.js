@@ -25,9 +25,9 @@ function Navbar() {
         </div>
         <div className="navbar-items-container">
           <NavbarItems link="/" className="head-item">
-            Geeks:
+            Home
           </NavbarItems>
-          <NavbarItems link="/about">Home</NavbarItems>
+          <NavbarItems link="/about">About</NavbarItems>
           <NavbarItems link="/teams">Team</NavbarItems>
           <NavbarItems link={github}>
             <FaGithub size={18} />

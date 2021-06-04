@@ -101,12 +101,38 @@
           font-size: $font-xl-sm;
         }
       }
+
+      h3 {
+        color: $light-text;
+        align-items: center;
+        display: flex;
+
+        svg {
+          font-size: 2rem;
+          margin-right: 1rem;
+        }
+
+        a {
+          color: $light-text;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
       .social-btns {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
+
+        @include md {
+          margin-top: 1.5rem;
+        }
 
         @include sm {
           margin-top: 1.5rem;
@@ -167,10 +193,14 @@
     color: $light-text;
     font-size: 1.6rem;
     margin-top: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
     @include sm {
       font-size: 1rem;
+    }
+
+    svg {
+      color: $green;
     }
   }
 }

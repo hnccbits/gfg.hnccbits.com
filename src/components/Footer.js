@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub, FaHeart, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
 import SocialButtons from './SocialButtons';
 
 const github = 'https://github.com/GeeksForGeeks-BIT-Sindri/Gfg-BITS-Website';
@@ -40,6 +41,10 @@ function Footer() {
         </div>
         <div className="social">
           <h1>Connect with us and never miss out what happens here.</h1>
+          <h3>
+            <IoIosMail />
+            <a href="mailto:gfgbitsindri@gmail.com"> gfgbitsindri@gmail.com </a>
+          </h3>
           <div className="social-btns">
             <SocialButtons link={github}>
               <FaGithub size={24} /> <p>Github</p>
@@ -55,7 +60,7 @@ function Footer() {
       </div>
       <div>
         <p className="footnote">
-          Made with <FaHeart color="red" size={20} /> by GfG BIT, Sindri
+          Made with <FaHeart size={20} /> by GfG BIT, Sindri
         </p>
       </div>
     </div>

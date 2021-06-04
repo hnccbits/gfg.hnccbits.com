@@ -36,6 +36,15 @@
       padding: 0.5rem 1rem;
       background-color: $black;
       border-radius: 5px;
+      transition: 400ms;
+      text-decoration: none;
+      color: $white;
+      font-size: 1.2rem;
+
+      &:hover {
+        box-shadow: 3px 3px 20px #c3c3c3;
+        cursor: pointer;
+      }
 
       @include sm {
         margin-bottom: 0.5rem;
@@ -54,17 +63,10 @@
         }
       }
 
-      a {
+      svg {
         color: $white;
         background-color: inherit;
-        font-size: $font-common;
-        text-decoration: none;
-
-        svg {
-          color: $white;
-          background-color: inherit;
-          margin-top: 5px;
-        }
+        margin-top: 5px;
       }
     }
 

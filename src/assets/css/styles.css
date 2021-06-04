@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 .navbar {
   width: 60%;
   margin: 1rem auto 5rem;
@@ -48,6 +49,15 @@
   padding: 0.5rem 1rem;
   background-color: #25282c;
   border-radius: 5px;
+  transition: 400ms;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-items-container .navbar-items:hover {
+  box-shadow: 3px 3px 20px #c3c3c3;
+  cursor: pointer;
 }
 
 @media (max-width: 576px) {
@@ -76,14 +86,7 @@
   }
 }
 
-.navbar .navbar-items-container .navbar-items a {
-  color: #ffffff;
-  background-color: inherit;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.navbar .navbar-items-container .navbar-items a svg {
+.navbar .navbar-items-container .navbar-items svg {
   color: #ffffff;
   background-color: inherit;
   margin-top: 5px;
@@ -267,6 +270,136 @@
   }
 }
 
+.about .details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 1rem;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  .about .details-container {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .details-container {
+    width: 90%;
+    padding: 1.5rem 0 1rem;
+  }
+}
+
+.about .details-container .details {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about .details-container .details h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about .details-container .details h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .details-container .details h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.about .details-container .details p {
+  font-size: 1.2rem;
+}
+
+.about .details-container .logo {
+  margin-left: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .details-container .logo img {
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .about .details-container .logo {
+    margin-bottom: 2rem;
+  }
+}
+
+.about .extra-detail {
+  width: 50%;
+  margin: 0 auto 4rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 576px) {
+  .about .extra-detail {
+    width: 90%;
+  }
+}
+
+.about .extra-detail span {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.about .extra-detail span a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.about .extra-detail span a:hover {
+  text-decoration: underline;
+}
+
+.about .associations {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about .associations h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .about .associations h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .associations h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.about .associations .logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about .associations .logos img {
+  width: 100%;
+  height: 250px;
+}
+
 .footer {
   background-color: #25282c;
   display: flex;
@@ -398,12 +531,39 @@
   }
 }
 
+.footer .container .social h3 {
+  color: #6b7280;
+  align-items: center;
+  display: flex;
+}
+
+.footer .container .social h3 svg {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.footer .container .social h3 a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.footer .container .social h3 a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer .container .social .social-btns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .footer .container .social .social-btns {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -467,7 +627,7 @@
   color: #6b7280;
   font-size: 1.6rem;
   margin-top: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 576px) {
@@ -476,12 +636,27 @@
   }
 }
 
+.footer .footnote svg {
+  color: #308d46;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
   background-color: #f9fafb;
+}
+
+body .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+body .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
 }
