@@ -11,10 +11,6 @@ function Footer() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = () => {
-    console.log(name, email, message);
-  };
-
   return (
     <div className="footer">
       <div className="container">
@@ -39,9 +35,7 @@ function Footer() {
               name="message"
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit" onClick={handleSubmit}>
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div className="social">

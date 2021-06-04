@@ -2,8 +2,9 @@ import React from 'react';
 import logo from '../../assets/images/gfg.png';
 import NavbarItems from './NavbarItems';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const github = 'https://github.com/GeeksForGeeks-BIT-Sindri/Gfg-BITS-Website';
+const github = 'https://github.com/GeeksForGeeks-BIT-Sindri';
 const instagram = 'https://instagram.com/gfg.hnccbits?utm_medium=copy_link';
 
 function Navbar() {
@@ -18,14 +19,16 @@ function Navbar() {
     >
       <div className="navbar">
         <div className="navbar-logo">
-          <img src={logo} alt="GfG" />
+          <Link to="/">
+            <img src={logo} alt="GfG" />
+          </Link>
         </div>
         <div className="navbar-items-container">
           <NavbarItems link="/" className="head-item">
             Geeks:
           </NavbarItems>
-          <NavbarItems link="/home">Home</NavbarItems>
-          <NavbarItems link="/team">Team</NavbarItems>
+          <NavbarItems link="/about">Home</NavbarItems>
+          <NavbarItems link="/teams">Team</NavbarItems>
           <NavbarItems link={github}>
             <FaGithub size={18} />
           </NavbarItems>

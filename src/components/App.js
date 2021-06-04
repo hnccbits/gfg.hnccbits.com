@@ -1,12 +1,14 @@
 import React from 'react';
-import Main from './Main/Main';
+import Footer from './Footer';
 import Navbar from './Navbar/Navbar';
+import Routes from '../routes/Routes';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Main />
+      <Routes />
+      <Footer />
     </>
   );
 }
