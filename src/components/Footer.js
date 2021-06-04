@@ -19,12 +19,7 @@ function Footer() {
     <div className="footer">
       <div className="container">
         <div className="form">
-          <form
-            name="contact"
-            onSubmit="submit"
-            method="post"
-            data-netlify="true"
-          >
+          <form name="contact" method="post">
             <input type="hidden" value="contact" name="form-name" />
             <input
               placeholder="Name"
