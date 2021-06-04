@@ -15,6 +15,7 @@ function Newsletter() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
+            name="email"
           />
           <button type="submit">
             <FaArrowRight className="submit" size={20} />
