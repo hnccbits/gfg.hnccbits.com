@@ -4,25 +4,46 @@
 @import './section';
 @import './newsletter';
 @import './about';
+@import './teams';
 @import './footer';
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
 }
 
 body {
-  background-color: $bg-white;
+	background-color: $bg-white;
 
-  .fade-enter {
-    opacity: 0;
-    z-index: 1;
-  }
+	.fade-enter,
+	.fade-exit,
+	.fade-appear {
+		transition: all 400ms ease-in-out;
+	}
 
-  .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 400ms ease-in-out;
-  }
+	.fade-enter,
+	.fade-appear {
+		opacity: 0;
+	}
+
+	.fade-enter-active,
+	.fade-appear-active {
+		opacity: 1;
+	}
+
+	.fade-exit {
+		opacity: 1;
+	}
+
+	.fade-exit-active {
+		opacity: 0;
+	}
+}
+
+button {
+	cursor: pointer;
 }

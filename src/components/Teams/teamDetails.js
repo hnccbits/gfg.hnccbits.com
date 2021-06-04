@@ -1,0 +1,102 @@
+import anjali from '../../assets/images/anjali.jpg';
+import abhinav from '../../assets/images/abhinav.jpg';
+import shivam from '../../assets/images/shivam.jpg';
+import riya from '../../assets/images/riya.jpg';
+import zeeshan from '../../assets/images/zeeshan.jpg';
+import anand from '../../assets/images/anand.jpg';
+import shiwani from '../../assets/images/shiwani.jpg';
+import rishav from '../../assets/images/rishav.jpg';
+// import i1 from '../../assets/images/demo-team-img.jpg'
+
+const teamDetails = [
+	{
+		name: 'Riya Kumari',
+		position: 'Chapter-Lead',
+		branch: 'CSE',
+		batch: '2k19',
+		email: 'hnccbits@gmail.com',
+		github: 'https://github.com/hnccbits',
+		linkedin: 'https://linkedin.com/hnccbits',
+		insta: 'https://instagram.com/hnccbits',
+		avatar: riya,
+	},
+	{
+		name: 'Zeeshan Ashraf',
+		position: 'Vice-Chairperson',
+		branch: 'ECE',
+		batch: '2k19',
+		email: 'skshivamkedia96@gmail.com',
+		github: 'skshivamkedia/',
+		linkedin: 'skshivamkedia/',
+		insta: 'skshivamkedia/',
+		avatar: zeeshan,
+	},
+	{
+		name: 'Anand Kumar',
+		position: 'Technical Head',
+		branch: 'ECE',
+		batch: '2k19',
+		email: 'kumarabhishek31853@gmail.com',
+		github: 'anandbit/',
+		linkedin: 'anand-kumar-5154a31a6/',
+		insta: 'anandkumar2626/',
+		avatar: anand,
+	},
+	{
+		name: 'Abhinav Kr. Singh',
+		position: 'Event Head',
+		branch: 'Metal',
+		batch: '2k19',
+		email: 'abhinav.singhac@gmail.com',
+		github: 'A1bhinavSingh/',
+		linkedin: 'abhinav-singh-1961251a3/',
+		insta: '_1_random_guy_1_',
+		avatar: abhinav,
+	},
+	{
+		name: 'Anjali Kumari',
+		position: 'Marketing Head',
+		branch: 'Chemical',
+		batch: '2k19',
+		email: 'anjalikumari13617@gmail.com',
+		github: 'anjali1361/',
+		linkedin: 'anjali1361/',
+		insta: 'anja.likumari601/',
+		avatar: anjali,
+	},
+	{
+		name: 'Shivam Kedia',
+		position: 'PR & Outreach Head',
+		branch: 'IT',
+		batch: '2k19',
+		email: 'skshivamkedia96@gmail.com',
+		github: 'skshivamkedia/',
+		linkedin: 'skshivamkedia/',
+		insta: 'skshivamkedia/',
+		avatar: shivam,
+	},
+	{
+		name: 'Rishav Gupta',
+		position: 'Social-Media Head',
+		branch: 'Electrical',
+		batch: '2k19',
+		email: 'skshivamkedia96@gmail.com',
+		github: 'skshivamkedia/',
+		linkedin: 'skshivamkedia/',
+		insta: 'skshivamkedia/',
+		avatar: rishav,
+	},
+	{
+		name: 'Shiwani Kumari',
+		position: 'Design Head',
+		branch: 'ECE',
+		batch: '2k20',
+		email: 'shiwanikumari835@gmail.com',
+		github: 'shiwi123/',
+		linkedin: 'shiwani-kumari-69298b207/',
+		insta: '_s.h.i.w.a.n.i._/',
+		avatar: shiwani,
+	},
+];
+
+export default teamDetails;

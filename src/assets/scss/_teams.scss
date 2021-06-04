@@ -1,0 +1,126 @@
+.teams {
+	margin: auto;
+	text-align: center;
+
+	&-card-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		gap: 5rem;
+		padding: 5rem 10rem 8rem;
+		color: $black;
+
+		@include md {
+			padding: 5rem;
+		}
+
+		@include sm {
+			padding: 5rem 2rem;
+		}
+
+		.team__card {
+			border-radius: 5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+			&-img {
+				width: 100%;
+				border-radius: 5px;
+				position: relative;
+
+				img {
+					width: 100%;
+					height: 250px;
+					object-fit: fill;
+					display: block;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+
+					@include lg {
+						height: 400px;
+					}
+
+					@include md {
+						height: 350px;
+					}
+
+					@include sm {
+						height: auto;
+					}
+				}
+			}
+
+			&-socials {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				padding: 1rem;
+				top: 0;
+				left: 0;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				align-items: center;
+				justify-items: center;
+				gap: 5px;
+				background: rgba(255, 255, 255, 0.5);
+				z-index: 1;
+				opacity: 0;
+				transform: translateY(50%);
+				transition: all 0.3s;
+
+				a {
+					text-decoration: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: $white;
+					border-radius: 5px;
+					padding: 8px;
+					background: rgba(0, 0, 0, 0.5);
+					transition: all 0.3s;
+
+					&:hover {
+						background: rgba(0, 0, 0, 0.7);
+					}
+				}
+			}
+
+			&:hover .team__card-socials {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			&-content {
+				padding: 1rem 5px;
+				display: grid;
+				gap: 0.5rem;
+
+				h2 {
+					font-size: $font-l;
+				}
+
+				a {
+					text-decoration: none;
+					font-style: italic;
+					color: $black;
+					position: relative;
+					font-size: 0.9rem;
+					// font-size: small;
+
+					.bottom-line {
+						width: 0%;
+						height: 1px;
+						background-color: $black;
+						position: absolute;
+						bottom: -3px;
+						left: 50%;
+						transform: translateX(-50%);
+						transition: width 0.3s;
+					}
+
+					&:hover .bottom-line {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
