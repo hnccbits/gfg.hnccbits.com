@@ -59,8 +59,12 @@ function Footer() {
         </div>
       </div>
       <div>
-        <p className="footnote">
-          Made with <FaHeart size={20} /> by GfG BIT, Sindri
+        <p
+          style={{ display: 'flex', alignItems: 'center' }}
+          className="footnote"
+        >
+          Made with <FaHeart size={20} style={{ margin: '0 1rem' }} /> by GfG
+          BIT, Sindri
         </p>
       </div>
     </div>
