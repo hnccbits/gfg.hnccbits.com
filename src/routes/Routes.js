@@ -6,18 +6,31 @@ import Main from '../components/Main/Main';
 import Teams from '../components/Teams/Teams';
 
 const Routes = () => {
-  const location = useLocation();
-  return (
-    <TransitionGroup>
-      <CSSTransition key={location.key} classNames="fade" timeout={400}>
-        <Switch location={location}>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={AboutUs} />
-          <Route exact path="/teams" component={Teams} />
-        </Switch>
-      </CSSTransition>
-    </TransitionGroup>
-  );
+	const location = useLocation();
+
+	const routeDetails = [
+		{ path: '/', Component: Main },
+		{ path: '/about', Component: AboutUs },
+		{ path: '/teams', Component: Teams },
+	];
+
+	return (
+		<TransitionGroup>
+			<CSSTransition key={location.key} classNames='fade' timeout={400} appear>
+				<Switch location={location}>
+					{routeDetails.map(({ path, Component }) => {
+						return (
+							<Route exact path={path} key={path}>
+								<div className='fade'>
+									<Component />
+								</div>
+							</Route>
+						);
+					})}
+				</Switch>
+			</CSSTransition>
+		</TransitionGroup>
+	);
 };
 
 export default Routes;

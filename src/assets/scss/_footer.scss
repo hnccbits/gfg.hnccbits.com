@@ -1,206 +1,209 @@
 .footer {
-  background-color: $black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 0 2rem;
-  text-align: center;
-  flex-direction: column;
+	background-color: $black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 0 2rem;
+	text-align: center;
+	flex-direction: column;
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    margin: 1rem 0 3rem;
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		margin: 1rem 0 3rem;
 
-    @include md {
-      margin: 1rem 1rem 3rem;
-    }
-    @include sm {
-      flex-direction: column;
-      margin: 1rem 1rem 3rem;
-    }
+		@include md {
+			margin: 1rem 1rem 3rem;
+		}
+		@include sm {
+			flex-direction: column;
+			margin: 1rem 1rem 3rem;
+		}
 
-    .form {
-      flex: 1;
-      form {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-right: 3px solid $light-text;
-        padding: 1rem 0;
+		.form {
+			flex: 1;
+			form {
+				text-align: left;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				border-right: 3px solid $light-text;
+				padding: 1rem 0;
 
-        @include sm {
-          border-right: none;
-          border-bottom: 3px solid $light-text;
-          margin-bottom: 2rem;
-          padding-bottom: 3rem;
-        }
-        input {
-          padding: 0.5rem 1rem;
-          font-size: 1.2rem;
-          margin-bottom: 1rem;
-          border: none;
-          outline: none;
-          border-radius: 5px;
-          width: 70%;
+				@include sm {
+					border-right: none;
+					border-bottom: 3px solid $light-text;
+					margin-bottom: 2rem;
+					padding-bottom: 3rem;
+				}
+				input {
+					padding: 0.5rem 1rem;
+					font-size: 1.2rem;
+					margin-bottom: 1rem;
+					border: none;
+					outline: none;
+					border-radius: 5px;
+					width: 70%;
 
-          @include sm {
-            width: 100%;
-            font-size: 1rem;
-          }
-        }
-        textarea {
-          width: 90%;
-          padding: 0.5rem 1rem;
-          font-size: 1.2rem;
-          letter-spacing: 0px;
-          border-radius: 5px;
-          height: 6rem;
-          @include sm {
-            width: 100%;
-            font-size: 1rem;
-          }
-        }
-        button {
-          padding: 0.5rem 1rem;
-          margin-top: 1.4rem;
-          font-size: 1.2rem;
-          color: $white;
-          background-color: $green;
-          border: none;
-          outline: none;
-          width: 30%;
-          border-radius: 5px;
-          @include sm {
-            width: 100%;
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-    .social {
-      text-align: left;
-      flex: 1;
-      margin-left: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1rem 0;
+					@include sm {
+						width: 100%;
+						font-size: 1rem;
+					}
+				}
+				textarea {
+					width: 90%;
+					padding: 0.5rem 1rem;
+					font-size: 1.2rem;
+					letter-spacing: 0px;
+					border-radius: 5px;
+					height: 6rem;
+					border: none;
+					outline: none;
 
-      @include sm {
-        margin-left: 0;
-      }
+					@include sm {
+						width: 100%;
+						font-size: 1rem;
+					}
+				}
+				button {
+					padding: 0.5rem 1rem;
+					margin-top: 1.4rem;
+					font-size: 1.2rem;
+					color: $white;
+					background-color: $green;
+					border: none;
+					outline: none;
+					width: 30%;
+					border-radius: 5px;
+					@include sm {
+						width: 100%;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+		.social {
+			text-align: left;
+			flex: 1;
+			margin-left: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 1rem 0;
 
-      h1 {
-        color: $white;
-        margin-bottom: 1rem;
+			@include sm {
+				margin-left: 0;
+			}
 
-        @include sm {
-          font-size: $font-xl-sm;
-        }
-      }
+			h1 {
+				color: $white;
+				margin-bottom: 1rem;
 
-      h3 {
-        color: $light-text;
-        align-items: center;
-        display: flex;
+				@include sm {
+					font-size: $font-xl-sm;
+				}
+			}
 
-        svg {
-          font-size: 2rem;
-          margin-right: 1rem;
-        }
+			h3 {
+				color: $light-text;
+				align-items: center;
+				display: flex;
 
-        a {
-          color: $light-text;
-          text-decoration: none;
+				svg {
+					font-size: 2rem;
+					margin-right: 1rem;
+				}
 
-          &:hover {
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-      }
+				a {
+					color: $light-text;
+					text-decoration: none;
 
-      .social-btns {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
+					&:hover {
+						text-decoration: underline;
+						cursor: pointer;
+					}
+				}
+			}
 
-        @include md {
-          margin-top: 1.5rem;
-        }
+			.social-btns {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: flex-start;
 
-        @include sm {
-          margin-top: 1.5rem;
-          flex-direction: row;
-        }
+				@include md {
+					margin-top: 1.5rem;
+				}
 
-        .social-button {
-          background-color: $bg-white;
-          padding: 0.5rem 1rem;
-          margin: 0 1rem;
-          border-radius: 5px;
-          transition: 400ms;
+				@include sm {
+					margin-top: 1.5rem;
+					flex-direction: row;
+				}
 
-          &:nth-child(1) {
-            margin-left: 0;
-          }
-          @include md {
-            &:nth-last-child(1) {
-              margin-top: 1rem;
-              margin-left: 0;
-            }
-          }
-          @include sm {
-            &:nth-last-child(1) {
-              margin-top: 1rem;
-              margin-left: 0;
-            }
-          }
+				.social-button {
+					background-color: $bg-white;
+					padding: 0.5rem 1rem;
+					margin: 0 1rem;
+					border-radius: 5px;
+					transition: 400ms;
 
-          @include xs {
-            &:nth-last-child(2) {
-              margin-left: 0;
-            }
-          }
+					&:nth-child(1) {
+						margin-left: 0;
+					}
+					@include md {
+						&:nth-last-child(1) {
+							margin-top: 1rem;
+							margin-left: 0;
+						}
+					}
+					@include sm {
+						&:nth-last-child(1) {
+							margin-top: 1rem;
+							margin-left: 0;
+						}
+					}
 
-          &:hover {
-            box-shadow: 2px 2px 5px $bg-white;
-            cursor: pointer;
-          }
+					@include xs {
+						&:nth-last-child(2) {
+							margin-left: 0;
+						}
+					}
 
-          a {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            color: $black;
-            text-decoration: none;
+					&:hover {
+						box-shadow: 2px 2px 5px $bg-white;
+						cursor: pointer;
+					}
 
-            p {
-              margin-left: 0.5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  .footnote {
-    color: $light-text;
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    letter-spacing: 1px;
+					a {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-between;
+						color: $black;
+						text-decoration: none;
 
-    @include sm {
-      font-size: 1rem;
-    }
+						p {
+							margin-left: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footnote {
+		color: $light-text;
+		font-size: 1.6rem;
+		margin-top: 1rem;
+		letter-spacing: 1px;
 
-    svg {
-      color: $green;
-    }
-  }
+		@include sm {
+			font-size: 1rem;
+		}
+
+		svg {
+			color: $green;
+		}
+	}
 }
