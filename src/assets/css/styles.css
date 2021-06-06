@@ -416,7 +416,7 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 5rem;
   margin-top: 1rem;
-  padding: 5rem 8rem 8rem;
+  padding: 5rem 9rem 8rem;
   color: #25282c;
 }
 
