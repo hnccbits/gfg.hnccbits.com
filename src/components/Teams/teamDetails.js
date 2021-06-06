@@ -37,7 +37,7 @@ const teamDetails = [
 		batch: '2k19',
 		email: 'kumarabhishek31853@gmail.com',
 		github: 'anandbit',
-		linkedin: 'anand-kumar-5154a31a6',
+		linkedin: 'anandbit',
 		insta: 'anandkumar2626',
 		avatar: anand,
 	},
