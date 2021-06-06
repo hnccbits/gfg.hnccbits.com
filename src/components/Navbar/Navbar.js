@@ -4,8 +4,8 @@ import NavbarItems from './NavbarItems';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const github = 'https://github.com/GeeksForGeeks-BIT-Sindri';
-const instagram = 'https://instagram.com/gfg.hnccbits?utm_medium=copy_link';
+const github = 'https://github.com/GeeksForGeeks-BIT-Sindri/';
+const instagram = 'https://instagram.com/gfg.hnccbits/';
 
 function Navbar() {
 	return (
@@ -30,12 +30,22 @@ function Navbar() {
 					</NavbarItems>
 					<NavbarItems link='/about'>About</NavbarItems>
 					<NavbarItems link='/teams'>Team</NavbarItems>
-					<NavbarItems link={github}>
+					<a
+						href={github}
+						className='navbar-items'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<FaGithub size={18} />
-					</NavbarItems>
-					<NavbarItems link={instagram}>
+					</a>
+					<a
+						href={instagram}
+						className='navbar-items'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<FaInstagram size={18} />
-					</NavbarItems>
+					</a>
 				</div>
 			</div>
 		</div>
