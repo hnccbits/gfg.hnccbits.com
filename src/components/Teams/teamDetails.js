@@ -6,7 +6,6 @@ import zeeshan from '../../assets/images/zeeshan.jpg';
 import anand from '../../assets/images/anand.jpg';
 import shiwani from '../../assets/images/shiwani.jpg';
 import rishav from '../../assets/images/rishav.jpg';
-// import i1 from '../../assets/images/demo-team-img.jpg'
 
 const teamDetails = [
 	{
@@ -14,10 +13,10 @@ const teamDetails = [
 		position: 'Chapter-Lead',
 		branch: 'CSE',
 		batch: '2k19',
-		email: 'hnccbits@gmail.com',
-		github: 'https://github.com/hnccbits',
-		linkedin: 'https://linkedin.com/hnccbits',
-		insta: 'https://instagram.com/hnccbits',
+		email: 'rj220699@gmail.com',
+		github: 'Riya-code',
+		linkedin: 'riya-kumari-8639671a1',
+		insta: 'hnccbits',
 		avatar: riya,
 	},
 	{
@@ -26,9 +25,9 @@ const teamDetails = [
 		branch: 'ECE',
 		batch: '2k19',
 		email: 'ashraf2k1zeeshan@gmail.com',
-		github: 'https://github.com/Zeeshan-2k1',
-		linkedin: 'https://www.linkedin.com/in/zeeshan-ashraf-38897b1a6/',
-		insta: 'https://www.instagram.com/__zeero_cool__/',
+		github: 'Zeeshan-2k1',
+		linkedin: 'zeeshan-ashraf-38897b1a6',
+		insta: '__zeero_cool__',
 		avatar: zeeshan,
 	},
 	{
@@ -37,9 +36,9 @@ const teamDetails = [
 		branch: 'ECE',
 		batch: '2k19',
 		email: 'kumarabhishek31853@gmail.com',
-		github: 'anandbit/',
-		linkedin: 'anand-kumar-5154a31a6/',
-		insta: 'anandkumar2626/',
+		github: 'anandbit',
+		linkedin: 'anandbit',
+		insta: 'anandkumar2626',
 		avatar: anand,
 	},
 	{
@@ -48,8 +47,8 @@ const teamDetails = [
 		branch: 'Metal',
 		batch: '2k19',
 		email: 'abhinav.singhac@gmail.com',
-		github: 'A1bhinavSingh/',
-		linkedin: 'abhinav-singh-1961251a3/',
+		github: 'A1bhinavSingh',
+		linkedin: 'abhinav-singh-1961251a3',
 		insta: '_1_random_guy_1_',
 		avatar: abhinav,
 	},
@@ -59,9 +58,9 @@ const teamDetails = [
 		branch: 'Chemical',
 		batch: '2k19',
 		email: 'anjalikumari13617@gmail.com',
-		github: 'anjali1361/',
-		linkedin: 'anjali1361/',
-		insta: 'anja.likumari601/',
+		github: 'anjali1361',
+		linkedin: 'anjali1361',
+		insta: 'anja.likumari601',
 		avatar: anjali,
 	},
 	{
@@ -70,9 +69,9 @@ const teamDetails = [
 		branch: 'IT',
 		batch: '2k19',
 		email: 'skshivamkedia96@gmail.com',
-		github: 'skshivamkedia/',
-		linkedin: 'skshivamkedia/',
-		insta: 'skshivamkedia/',
+		github: 'skshivamkedia',
+		linkedin: 'skshivamkedia',
+		insta: 'skshivamkedia',
 		avatar: shivam,
 	},
 	{
@@ -80,10 +79,10 @@ const teamDetails = [
 		position: 'Social-Media Head',
 		branch: 'Electrical',
 		batch: '2k19',
-		email: 'skshivamkedia96@gmail.com',
-		github: 'skshivamkedia/',
-		linkedin: 'skshivamkedia/',
-		insta: 'skshivamkedia/',
+		email: 'mrg.rishavgupta@gmail.com',
+		github: 'rishav311',
+		linkedin: 'rishav-gupta-8303601a7',
+		insta: 'mrishavgupta',
 		avatar: rishav,
 	},
 	{
@@ -92,9 +91,9 @@ const teamDetails = [
 		branch: 'ECE',
 		batch: '2k20',
 		email: 'shiwanikumari835@gmail.com',
-		github: 'shiwi123/',
-		linkedin: 'shiwani-kumari-69298b207/',
-		insta: '_s.h.i.w.a.n.i._/',
+		github: 'shiwi123',
+		linkedin: 'shiwani-kumari-69298b207',
+		insta: '_s.h.i.w.a.n.i._',
 		avatar: shiwani,
 	},
 ];

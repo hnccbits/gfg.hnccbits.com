@@ -245,6 +245,11 @@
   border: none;
   border-radius: 5px;
   margin-right: 1rem;
+  transition: all 0.3s;
+}
+
+.newsletter .form input:focus {
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
@@ -410,7 +415,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 5rem;
-  padding: 5rem 10rem 8rem;
+  margin-top: 1rem;
+  padding: 5rem 9rem 8rem;
   color: #25282c;
 }
 
@@ -439,8 +445,8 @@
 
 .teams-card-container .team__card-img img {
   width: 100%;
-  height: 250px;
-  object-fit: fill;
+  height: 300px;
+  object-fit: cover;
   display: block;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

@@ -21,7 +21,7 @@ const TeamCard = ({
 				<img src={avatar} alt='team-1' />
 				<div className='team__card-socials'>
 					<a
-						href={`https://github.com/${github}`}
+						href={`https://github.com/${github}/`}
 						className='github'
 						target='_blank'
 						rel='noopener noreferrer'
@@ -29,7 +29,7 @@ const TeamCard = ({
 						<FaGithub size={25} />
 					</a>
 					<a
-						href={`https://www.linkedin.com/in/${linkedin}`}
+						href={`https://www.linkedin.com/in/${linkedin}/`}
 						className='linkedin'
 						target='_blank'
 						rel='noopener noreferrer'
@@ -37,7 +37,7 @@ const TeamCard = ({
 						<FaLinkedinIn size={25} />
 					</a>
 					<a
-						href={`https://instagram.com/${insta}`}
+						href={`https://instagram.com/${insta}/`}
 						className='insta'
 						target='_blank'
 						rel='noopener noreferrer'
